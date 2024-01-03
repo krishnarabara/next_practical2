@@ -5,12 +5,15 @@
 // import { User } from 'path/to/interfaces';
 
 export type User = {
-  id: number
-  name: string
+  id: number;
+  name: string;
+  description: string;
+
 }
 
 export type Product= {
-  id:number, 
-  name: string, 
-  description: string 
+  id:number ;
+  name: string;
+  description: string ;
 }
+

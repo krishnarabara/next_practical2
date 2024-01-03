@@ -2,7 +2,6 @@ import React from 'react';
 import { useCart } from '../context/CartContext';
 import { Product } from '../interfaces';
 
-
 interface ProductComponentProps {
   product: Product;
 }

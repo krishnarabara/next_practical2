@@ -38,6 +38,7 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
 
 const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [cartState, dispatch] = useReducer(cartReducer, { items: [] });
+ 
 
   const addToCart = (product: Product) => {
     dispatch({ type: 'ADD_TO_CART', payload: product });
@@ -59,3 +60,5 @@ const useCart = (): CartContextProps => {
 };
 
 export { CartProvider, useCart };
+
+
